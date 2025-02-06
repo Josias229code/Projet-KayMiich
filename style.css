@@ -5,6 +5,10 @@
     font-family: "Montserrat" sans-serif !important;
 }
 
+body{
+    overflow: hidden;
+}
+
 .btn{
     box-shadow: 0px 7px 43px 0px #78C6FF59 !important;
     color: black !important;
@@ -60,6 +64,49 @@
     text-decoration-skip-ink: none;
     color: #fff;
 }
+
+/* Contact section */
+#contact {
+    width: 25vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100dvh;
+    background-color: #fff;
+    padding: 24px;
+    z-index: 999;
+    
+    /* Slide-in hidden state */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+#contact.active {
+    transform: translateX(0); /* Slide-in */
+}
+
+/* Style du bouton "Close" */
+#closeBtn {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+    background: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+input{
+    
+}
+
+
+
 /* footer */
 
 
