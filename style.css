@@ -62,7 +62,6 @@
 }
 /* footer */
 
-  
 
 
 .foot-cont .social-item{
@@ -83,7 +82,7 @@
     }
 
     .hero-section{
-        height: 90vh;
+        height: 70vh !important;
     }
 
     .hero-cont img{
@@ -102,7 +101,7 @@
         font-weight: 700;
         line-height: 34px;
         margin-top: 2rem !important;
-        text-align: center;
+        text-align: center !important;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #fff;
@@ -111,18 +110,22 @@
 
     .foot-cont{
         flex-direction: column;
-        
+        margin-bottom: 1rem !important;
     }
 
     .liste{
         flex-direction: column;
         align-items: center;
+        width: 55%;
+        margin: 0 auto;
     }
 
     .foot-body{
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+      
+       
     }
 
 }
