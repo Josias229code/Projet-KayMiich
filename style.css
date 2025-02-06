@@ -1,0 +1,128 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: "Montserrat" sans-serif !important;
+}
+
+.btn{
+    box-shadow: 0px 7px 43px 0px #78C6FF59 !important;
+    color: black !important;
+    background-color: #F18B11 !important;
+    border: none !important;
+    transition: background .2s ease-in-out !important;
+    font-family: 'Readex Pro' !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 12px 18px !important ;
+
+}
+
+.btn:hover{
+    background-color: #db7c07 !important;
+}
+
+.btn .bx{
+    color: #fff;
+}
+
+/* hero-section */
+
+.hero-section{
+    background: no-repeat center/cover url('/source/Rectangle-2.png');
+    border: none !important;
+    border-radius: 0 !important;
+    height: 85vh !important;
+}
+
+.hero-cont{
+    width: 70%
+
+}
+
+.hero-cont img{
+    width: 398px;
+    height: 146px;
+}
+
+
+.card-body h1{
+    font-family: 'Montserrat';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #fff;
+}
+/* footer */
+
+  
+
+
+.foot-cont .social-item{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: none !important;
+    }
+
+    .hero-section{
+        height: 90vh;
+    }
+
+    .hero-cont img{
+        width: 300px;
+
+    }
+
+
+    .card-body{
+        margin-bottom: 2rem !important;
+    }
+
+    .card-body h1{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 34px;
+        margin-top: 2rem !important;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #fff;
+    }
+
+
+    .foot-cont{
+        flex-direction: column;
+        
+    }
+
+    .liste{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot-body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+}
