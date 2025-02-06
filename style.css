@@ -73,6 +73,30 @@
 }
 
 
+@media screen and (max-width:912px){
+    .card-body h1{
+        font-family: 'Montserrat';
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        margin-top: 2rem !important;
+        text-align: center !important;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #fff;
+    }
+
+
+    .hero-section{
+        height: 60vh !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
@@ -128,4 +152,21 @@
        
     }
 
+    
+
+}
+
+
+@media screen and (max-width:390px){
+    .card-body h1{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 34px;
+        margin-top: 2rem !important;
+        text-align: center !important;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #fff;
+    }
 }
