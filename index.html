@@ -18,7 +18,7 @@
           <div class="logo">
             <img src="./source/Logo Kaymich-Services_Logo-horizontal-1.png" alt="logo de KayMich">
           </div>
-            <button class="btn btn-outline-success d-flex align-items-center gap-2 rounded-pill" type="button" onclick="contactForm()">Contactez nous <i class='bx bx-right-arrow-alt'></i></button>
+            <button class="btn btn-outline-success d-flex align-items-center gap-2 rounded-pill openContact" type="button" onclick="contactForm(this)">Contactez nous <i class='bx bx-right-arrow-alt'></i></button>
           
         </div>
     </nav>
@@ -30,7 +30,7 @@
             <img class="card-img-top" src="./source/Logo Kaymich-Services_Logo-horizontal-delinaison-1.png" alt="logo du site en declinaison" />
             <div class="card-body d-flex flex-column align-items-center gap-5">
                 <h1 class="card-title">Nous travaillons actuellement sur une nouvelle expérience en ligne pour vous.</h1>
-                <button class="btn btn-outline-success d-flex align-items-center gap-2  rounded-pill" type="button" onclick="contactForm()">Contactez nous <i class='bx bx-right-arrow-alt'></i></button>
+                <button class="btn btn-outline-success d-flex align-items-center gap-2  rounded-pill openContact"    type="button" onclick="contactForm(this)">Contactez nous <i class='bx bx-right-arrow-alt'></i></button>
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@
                     <textarea name="message" id="message" class="form-control p-2" rows="5"></textarea>
                 </div>
                 <div class="cta-wrapper ">
-                    <a class="btn btn-primary btn-lg " href="#"   role="button">Envoyer</a>
+                    <a class="btn btn-primary btn-lg "  href="#"   role="button">Envoyer</a>
                     <a class="btn btn-secondary btn-sm " href="#"   role="button">Annuler</a>
                 </div>
                 
@@ -148,22 +148,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <script>
-        function contactForm() {
+        let activeButton = null; // Stocke le bouton qui a ouvert le panneau
+
+function contactForm(button) {
     let contact = document.querySelector("#contact");
-    contact.classList.add("active"); // Afficher avec slide-in
+
+    contact.classList.add("active"); // Slide-in
+    button.disabled = true; // Désactiver le bouton cliqué
+    activeButton = button; // Mémoriser le bouton désactivé
 }
 
-// Fonction pour fermer le panneau
+// Fonction pour fermer le panneau et réactiver le bouton désactivé
 function closeContact() {
     let contact = document.querySelector("#contact");
-    contact.classList.remove("active"); // Masquer avec slide-out
+
+    contact.classList.remove("active"); // Slide-out
+
+    // Réactiver le bouton qui a ouvert le panneau
+    if (activeButton) {
+        activeButton.disabled = false;
+        activeButton = null;
+    }
 }
 
 // Ajouter l'événement au bouton "Close"
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("closeBtn").addEventListener("click", closeContact);
 });
-
 
     </script>
 </body>
