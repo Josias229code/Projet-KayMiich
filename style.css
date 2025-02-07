@@ -75,6 +75,7 @@ body{
     background-color: #fff;
     padding: 24px;
     z-index: 999;
+
     
     /* Slide-in hidden state */
     transform: translateX(100%);
@@ -86,6 +87,7 @@ body{
     transform: translateX(0); /* Slide-in */
 }
 
+/* la div parente de closeBtn */
 
 .head-cont{
     display: flex;
@@ -95,7 +97,6 @@ body{
 /* Style du bouton "Close" */
 #closeBtn {
  
-    
     border: none;
     cursor: pointer;
     align-self: flex-end;
