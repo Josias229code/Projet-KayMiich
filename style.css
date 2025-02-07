@@ -86,19 +86,21 @@ body{
     transform: translateX(0); /* Slide-in */
 }
 
-/* Style du bouton "Close" */
-#closeBtn {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-    background: white;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 24px;
-    cursor: pointer;
-    border-radius: 5px;
+
+.head-cont{
+    display: flex;
+    flex-direction: column;
 }
 
+/* Style du bouton "Close" */
+#closeBtn {
+ 
+    
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    
+}
 
 
 input{
